@@ -13,12 +13,13 @@
  * logMessage() => 'Hello, World!'
 */
 
-// Your code goes here
+function logMessage() {
+  return 'Hello, World!'
+}
 
 
 
-
-/**
+/*
  * =============================================================
  * Create a function that works as follows:
   * The function name is 'logMyMessage' strictly.
@@ -29,7 +30,9 @@
  * logMyMessage('My message') => 'My message'
 */
 
-// Your code goes here...
+function logMyMessage('My message') {
+  return 'I log my first message!'
+}
 
 
 
@@ -44,7 +47,9 @@
  * logMessageWithMyName('Andrey') => 'My name is Andrey!'
 */
 
-// Your code goes here...
+function logMessageWithMyName ('Derek') {
+  return 'My name is ' + logMessageWithMyName;
+}
 
 
 
@@ -60,8 +65,9 @@
  * logMyInfo('Andrey', 18) => 'My name is Andrey. I am 18 years old!'
 */
 
-// Your code goes here...
-
+function logMyInfo ('Derek', 32) {
+  return 'My name is ' + logMessageWithMyName + '. I am ' + 32 ' years old!';
+}
 
 
 

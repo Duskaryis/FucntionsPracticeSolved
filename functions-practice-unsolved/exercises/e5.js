@@ -12,6 +12,13 @@
 
 // Your code goes here...
 
+const getDiffTwentySeven = (num) => {
+	if (num < 27) {
+		return 27 - num;
+	}
+	return (num - 27) * 2;
+};
+
 /** =========================
  * Create a sumOfTwoIntegers(num1, num2) function to compute and return the sum of the two given integers
  * If the two argumants are same, then returns triple their sum.
@@ -20,6 +27,13 @@
  */
 
 // Your code goes here
+
+const sumOfTwoIntegers = (num1, num2) => {
+	if (num1 === num2) {
+		return (num1 + num2) * 3;
+	}
+	return num1 + num2;
+};
 
 /** =========================
  * Create a isOneOfThemOrTheirSumIsFourty(num1, num2) function to check two given numbers and return a boolean.
@@ -31,6 +45,12 @@
  */
 
 // Your code goes here...
+const isOneOfThemOrTheirSumIsFourty = (num1, num2) => {
+	if (num1 === 40 || num2 === 40 || num1 + num2 === 40) {
+		return true;
+	}
+	return false;
+};
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-5"

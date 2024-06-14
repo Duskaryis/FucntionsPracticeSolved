@@ -34,9 +34,11 @@ personAge({ id: 1, name: "Someone", age: 32 });
  * isNameInArray(['Jon', 'Michael', 'Andrey'], 'James') => false;
  */
 
-const isNameInArray = (name) => {
-	const names = ["Jon", "Michael", "Andrey"];
-	return names.includes(name);
+const isNameInArray = (arr, name) => {
+	if (arr.includes(name)) {
+		return true;
+	}
+	return false;
 };
 
 isNameInArray("Michael");
@@ -49,9 +51,9 @@ isNameInArray("James");
  * !!! Hint: There are two functions to refactor !!!
  */
 
-const logSecondsUpToMax = function (max) {
+const logSecondsUpToMax = (max) => {
 	let i = 0;
-	const timer = setInterval(function () {
+	const timer = setInterval(() => {
 		if (i < max) {
 			console.log(++i);
 		} else {
